@@ -55,9 +55,8 @@ export const CreateUserForm = () => {
 
       <label for="Product_Description">
         Product Description:
-        <input type="text" name="product_name" onChange={handleChange} />
+        <input type="text" name="product_description" onChange={handleChange} />
       </label>
-
 
       <label for="Price">
         Price:
@@ -72,6 +71,7 @@ export const CreateUserForm = () => {
           handleSubmit();
         }}
       />
+      
     </form>
   );
 };
