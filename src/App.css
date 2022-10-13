@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    /* padding: 0; */
+    margin: 0;
+  }
+  
+  .App {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .Homediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(103, 95, 81);
+    background-image: url(./Components/334443.jpg);
+    background-size: cover;
+    object-fit: contain;
+    /* background-repeat: no-repeat; */
+    width: auto;
+    height: auto;
+    border: 5px solid pink;
+    padding-top: 0px;
+  }
+  
+  .HomeComment {
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+  }
+  
+  .HomeContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(103, 95, 81);
+    object-fit: contain;
+    width: 500px;
+    height: auto;
+    border: 5px solid greenyellow;
+    padding-top: 0px;
+  }
+  
+  .FooterNote {
+    color-scheme: inherit;
+    font-size: large;
+    font-weight: bolder;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(103, 95, 81);
+    padding: 5px;
+    width: 500px;
+  }
+  
+  .fb {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .ProjectCardImage {
+    width: 150px;
+    height: 100px;
+    border: 5px solid greenyellow;
+  }
+  
+  h1 {
+    display: flex;
+    flex-direction: row;
+    color: Pink;
+    justify-content: center;
+    font-size: larger;
+  }
+  
+  h2 {
+    display: flex;
+    flex-direction: row;
+    color: Pink;
+    justify-content: center;
+    font-size: small;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    /* border: 5px solid pink; */
+    justify-content: space-between;
+    align-content: space-between;
+    color: white;
+    font-weight: bolder;
+  }
+  .nav-list-item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid yellow; */
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  li {
+    padding: 5px;
+    border: 5px solid burlywood;
+    color: white;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid pink; */
+    justify-content: center;
+    /* align-content: space-between; */
+    align-items: center;
+    text-align: center;
+    /* color: white; */
+    font-weight: bolder;
+    padding: 40px;
+  }
+  
+  .Contact-form {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid pink; */
+    /* background: black; */
+    /* color: white; */
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    padding: 40px;
+  }
+  
+  .ContactHeader {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid pink; */
+    background: black;
+    color: white;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    padding: 40px;
+  }
+  
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    justify-content: center;
+    align-items: center;
+    border: 5px red solid;
+    background-image: url(./Components/499274.jpg);
+    background-size: cover;
+    object-fit: contain;
+    height: 1000px;
+    background-repeat: repeat;
+  }
+  
+  .Login {
+    background-image: url(./Components/499359.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height: 1000px;
+  }
+  

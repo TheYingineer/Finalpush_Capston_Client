@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 import { getAll } from "./getAll";
 import "./App.css";
 import { ProductItem } from "./ProductItem";
-import { CreateUserForm } from "./CreateProductForm";
+import { CreateProductForm } from "./CreateProductForm";
+import Router from "./Router";
+import { BrowserRouter } from "react-router-dom";
+import Navigation from "./Components/Navigation";
 
 function App() {
   const [customers, setCustomers] = useState([]);
@@ -54,8 +57,12 @@ function App() {
 
   return (
     <div className="App">
-      <CreateUserForm />
-      <getAll items={products} component={ProductItem} />
+      <BrowserRouter>
+        <Navigation />
+        <Router />
+        <CreateProductForm />
+        <getAll items={products} component={ProductItem} />
+      </BrowserRouter>
     </div>
   );
 }

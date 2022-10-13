@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 
-export const CreateUserForm = () => {
+export const CreateProductForm = () => {
   const initialFormState = {
     product_name: "",
     product_description: "",
