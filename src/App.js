@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { getAll } from "./getAll";
 import "./App.css";
-import { CustomerItem } from "./CustomerItem";
-import { CreateUserForm } from "./CreateUserForm";
+import { ProductItem } from "./ProductItem";
+import { CreateUserForm } from "./CreateProductForm";
 
 function App() {
   const [customers, setCustomers] = useState([]);
@@ -21,7 +21,9 @@ function App() {
 
   useEffect(() => {
     const fetchCustomerData = async () => {
-      const data = await fetch("http://localhost:5000/customers");
+      const data = await fetch(
+        "https://finalpush-capstone-c88q4vol9-theyingineer.vercel.app/customers"
+      );
 
       const json = await data.json();
 
@@ -30,7 +32,7 @@ function App() {
 
     const fetchProductData = async () => {
       const data = await fetch(
-        "https://finalpush-capstone.vercel.app/products"
+        "https://finalpush-capstone-c88q4vol9-theyingineer.vercel.app/products"
       );
 
       const json = await data.json();
@@ -53,7 +55,7 @@ function App() {
   return (
     <div className="App">
       <CreateUserForm />
-      <getAll items={customers} component={CustomerItem} />
+      <getAll items={products} component={ProductItem} />
     </div>
   );
 }

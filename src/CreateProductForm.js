@@ -2,11 +2,12 @@ import React, { useReducer } from "react";
 
 export const CreateUserForm = () => {
   const initialFormState = {
-    first_name: "",
-    last_name: "",
+    product_name: "",
+    product_description: "",
+    price: "",
   };
 
-  const createUserReducer = (state, action) => {
+  const createProductReducer = (state, action) => {
     switch (action.type) {
       case "HANDLE_INPUT_TEXT":
         return {
@@ -17,7 +18,7 @@ export const CreateUserForm = () => {
         return state;
     }
   };
-  const [state, dispatch] = useReducer(createUserReducer, initialFormState);
+  const [state, dispatch] = useReducer(createProductReducer, initialFormState);
 
   // useEffect(() => {
   //   console.log({ initialFormState });
@@ -33,8 +34,8 @@ export const CreateUserForm = () => {
 
   const handleSubmit = () => {
     console.log(state);
-    fetch("https://quote-generator-olive-seven.vercel.app/customers", {
-      method: "POST",
+    fetch("https://finalpush-capstone-c88q4vol9-theyingineer.vercel.app/products", {
+      method: "PUT",
       body: JSON.stringify(state),
       headers: {
         "Content-Type": "application/json",
@@ -47,14 +48,23 @@ export const CreateUserForm = () => {
 
   return (
     <form>
-      <label for="first_name">
-        First name:
-        <input type="text" name="first_name" onChange={handleChange} />
+      <label for="Product_Name">
+        Product Name:
+        <input type="text" name="product_name" onChange={handleChange} />
       </label>
-      <label for="last_name">
-        Last name:
-        <input type="text" name="last_name" onChange={handleChange} />
+
+      <label for="Product_Description">
+        Product Description:
+        <input type="text" name="product_name" onChange={handleChange} />
       </label>
+
+
+      <label for="Price">
+        Price:
+        <input type="text" name="price" onChange={handleChange} />
+      </label>
+
+
       <input
         type="submit"
         onClick={(e) => {

@@ -5,7 +5,7 @@ export const getAll = (props) => {
   return (
     <ul>
       {props.items.map((x) => (
-        <Component first_name={x.first_name} last_name={x.last_name} />
+        <Component product_name ={x.product_name} />
       ))}
     </ul>
   );
